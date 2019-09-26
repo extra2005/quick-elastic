@@ -1,0 +1,10 @@
+#Laravel
+vendor/
+public/storage
+public/hot
+storage/*.key
+
+#OTHER
+composer.phar
+.env
+.env.*
