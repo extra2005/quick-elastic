@@ -11,6 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', function () {return view('welcome');});
+// Маршруты аутентификации...
+Route::auth();/*
+Route::get('/login', 'Auth\LoginController@getLogin');
+Route::post('/login', 'Auth\LoginController@postLogin');
+Route::get('/logout', 'Auth\LoginController@getLogout');
+
+// Маршруты регистрации...
+Route::get('register', 'Auth\RegisterController@getRegister');
+Route::post('register', 'Auth\RegisterController@postRegister');
+*/
